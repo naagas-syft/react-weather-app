@@ -2,7 +2,7 @@
 import type { type, SyftEventType } from '@syftdata/client';
 
 /**
- * Emit this event to identify a Group. Analytics Plugins can make `.set_group` calls when this event is seen.
+ * Emit this event to identify a Group. Analytics Plugins can make `.set_group` calls when this event is seen!
  * @type {SyftEventType.GROUP_IDENTIFY}
  */
 class GroupIdentity {
