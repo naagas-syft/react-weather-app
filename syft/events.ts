@@ -30,3 +30,30 @@ class PageViewed {
   name: string;
 
 }
+
+/**
+ * Logged when an user account is created
+ * @type {SyftEventType.TRACK}
+ */
+class UserCreated {
+  /**
+   * 
+   */
+  userid: string;
+
+  /**
+   * 
+   */
+  createdAt: Date;
+
+  /**
+   * 
+   */
+  domain: string;
+
+  /**
+   * 
+   */
+  email: string;
+
+}
