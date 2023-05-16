@@ -30,8 +30,8 @@ class UserCreated {
 
   createdAt: Date;
 
-  domain: string;
+  domain: type.Url;
 
-  email: string;
+  email: type.Email;
 
 }
