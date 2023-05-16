@@ -6,14 +6,8 @@ import type { type, SyftEventType } from '@syftdata/client';
  * @type {SyftEventType.GROUP_IDENTIFY}
  */
 class GroupIdentity {
-  /**
-   * Type of the group. e.g: age-bucket, organization.
-   */
   groupType: string;
 
-  /**
-   * Id of the group. e.g. "18-24", "syft-org"
-   */
   groupId: string;
 
 }
@@ -23,10 +17,6 @@ class GroupIdentity {
  * @type {SyftEventType.TRACK}
  */
 class PageViewed {
-  /**
-   * Documentation is not available.
-   * Please add it in the model file.
-   */
   name: string;
 
 }
@@ -36,24 +26,12 @@ class PageViewed {
  * @type {SyftEventType.TRACK}
  */
 class UserCreated {
-  /**
-   * 
-   */
   userid: string;
 
-  /**
-   * 
-   */
   createdAt: Date;
 
-  /**
-   * 
-   */
   domain: string;
 
-  /**
-   * 
-   */
   email: string;
 
 }
