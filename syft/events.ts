@@ -17,3 +17,16 @@ class GroupIdentity {
   groupId: string;
 
 }
+
+/**
+ * gets logged when page is viewed
+ * @type {SyftEventType.TRACK}
+ */
+class PageViewed {
+  /**
+   * Documentation is not available.
+   * Please add it in the model file.
+   */
+  name: string;
+
+}
