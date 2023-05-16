@@ -4,8 +4,9 @@ import type { type, SyftEventType } from '@syftdata/client';
 /**
  * This event tracks page views in the application. Log the event when a page is rendered.
  * @type {SyftEventType.PAGE}
+ * @type {SyftEventType.PAGE}
  */
-export class PageViewed {
+class PageViewed {
   /**
    * Name of the page.
    */
@@ -34,12 +35,13 @@ export class PageViewed {
   /**
    * Page’s full URL.
    */
-  url?: string;
+  url1?: string;
 
 }
 
 /**
  * Emit this event to identify a Group. Analytics Plugins can make `.set_group` calls when this event is seen.
+ * @type {SyftEventType.GROUP_IDENTIFY}
  * @type {SyftEventType.GROUP_IDENTIFY}
  */
 export class GroupIdentity {
@@ -58,11 +60,12 @@ export class GroupIdentity {
 /**
  * Emit this event to identify a User. Analytics Plugins can make `.identify` calls when this event is seen.
  * @type {SyftEventType.IDENTIFY}
+ * @type {SyftEventType.IDENTIFY}
  */
 export class UserIdentity {
   /**
    * Id of the user.
    */
-  userId: type.UUID;
+  userId: any;
 
 }
