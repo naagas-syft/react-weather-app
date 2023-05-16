@@ -32,6 +32,6 @@ class UserCreated {
 
   domain: string;
 
-  email: string;
+  email: type.Email;
 
 }
