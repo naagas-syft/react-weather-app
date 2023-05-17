@@ -35,3 +35,12 @@ class UserCreated {
   email: type.Email;
 
 }
+
+/**
+ * event gets fired when nav buttons are clicked
+ * @type {SyftEventType.TRACK}
+ */
+class NavButtonClicked {
+  name: string;
+
+}
