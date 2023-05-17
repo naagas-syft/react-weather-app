@@ -1,0 +1,167 @@
+{
+    "title": "NavButtonsTest",
+    "steps": [
+        {
+            "type": "navigate",
+            "url": "http://localhost:3001/",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "http://localhost:3001/"
+                }
+            ]
+        },
+        {
+            "type": "setViewport",
+            "width": 900,
+            "height": 865,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"brand-btn m-auto my-5 width-toggle\"]"
+                ],
+                [
+                    ".brand-btn"
+                ],
+                [
+                    "Today's Weather"
+                ]
+            ],
+            "offsetX": 167,
+            "offsetY": 31
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#defaultLocation"
+                ],
+                [
+                    "[placeholder=\"Enter location\"]"
+                ]
+            ],
+            "offsetX": 296,
+            "offsetY": 26
+        },
+        {
+            "type": "change",
+            "value": "los angeles, USA",
+            "target": "main",
+            "selectors": [
+                [
+                    "#defaultLocation"
+                ],
+                [
+                    "[placeholder=\"Enter location\"]"
+                ]
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"swal2-confirm swal2-styled swal2-default-outline\"]"
+                ],
+                [
+                    ".swal2-confirm"
+                ],
+                [
+                    "Save Location"
+                ]
+            ],
+            "offsetX": 126,
+            "offsetY": 30
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"footer-app-section brand-text-mute text-center \"]"
+                ],
+                [
+                    ".footer-app-section"
+                ],
+                [
+                    "App"
+                ]
+            ],
+            "offsetX": 51,
+            "offsetY": 28
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"footer-settings-section  brand-text-mute\"]:nth-child(2)"
+                ],
+                [
+                    ".footer-settings-section:nth-child(2)"
+                ],
+                [
+                    "Search"
+                ]
+            ],
+            "offsetX": 44,
+            "offsetY": 30
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"utility-notch my-2\"]"
+                ],
+                [
+                    ".utility-notch"
+                ]
+            ],
+            "offsetX": 44,
+            "offsetY": 6
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"footer-settings-section  brand-text-mute\"]:nth-child(3)"
+                ],
+                [
+                    ".footer-settings-section:nth-child(3)"
+                ],
+                [
+                    "Settings"
+                ]
+            ],
+            "offsetX": 43,
+            "offsetY": 32
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    ".footer-support-section"
+                ],
+                [
+                    "[class=\"footer-support-section brand-text-mute mx-1\"]"
+                ],
+                [
+                    "Support"
+                ]
+            ],
+            "offsetX": 42,
+            "offsetY": 34
+        }
+    ]
+}
