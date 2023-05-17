@@ -1,0 +1,218 @@
+{
+    "title": "NavButtonSpec",
+    "steps": [
+        {
+            "type": "navigate",
+            "url": "http://localhost:3000/",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "http://localhost:3000/"
+                }
+            ]
+        },
+        {
+            "type": "setViewport",
+            "width": 900,
+            "height": 865,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"brand-btn m-auto my-5 width-toggle\"]"
+                ],
+                [
+                    ".brand-btn"
+                ],
+                [
+                    "Today's Weather"
+                ]
+            ],
+            "offsetX": 212,
+            "offsetY": 36
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#defaultLocation"
+                ],
+                [
+                    "[placeholder=\"Enter location\"]"
+                ]
+            ],
+            "offsetX": 126,
+            "offsetY": 39
+        },
+        {
+            "type": "change",
+            "value": "los angeles, usa",
+            "target": "main",
+            "selectors": [
+                [
+                    "#defaultLocation"
+                ],
+                [
+                    "[placeholder=\"Enter location\"]"
+                ]
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"swal2-confirm swal2-styled swal2-default-outline\"]"
+                ],
+                [
+                    ".swal2-confirm"
+                ],
+                [
+                    "Save Location"
+                ]
+            ],
+            "offsetX": 61,
+            "offsetY": 19
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[role=\"button\"]:nth-child(2) > [class=\"footer-icons footer-settings-svg-section d-flex align-items-center justify-content-center my-2\"]"
+                ],
+                [
+                    ".footer-settings-section:nth-child(2) > .footer-icons"
+                ]
+            ],
+            "offsetX": 39,
+            "offsetY": 6
+        },
+        {
+            "type": "customStep",
+            "name": "syft",
+            "parameters": {
+                "name": "NavButtonClicked",
+                "props": {
+                    "name": "Search"
+                }
+            }
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#root"
+                ],
+                [
+                    "Lagos 9ja\n\nWednesday, 17th Of May\n\n30\no\n\nClear Sky\n\n2.90 m/s\n\nWind\n\n98%\n\nHumidity\n\n1000 hPa\n\nPressure\n\nToday\n\nTomorrow\n\nNext\n\n12pm\n\n26o\n\n12pm\n\n26o\n\n12pm\n\n26o\n\n12pm\n\n26o\n\n12pm\n\n26o\n\n12pm\n\n26o\n\n12pm\n\n26o\n\n12pm\n\n26o\n\nCurrent Location\n\n\n\n\n\n\nSearch City\nTrack Saved Location!\nApp\nSearch\nSettings\nSupport"
+                ]
+            ],
+            "offsetX": 883,
+            "offsetY": 476
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"utility-notch my-2\"]"
+                ],
+                [
+                    ".utility-notch"
+                ]
+            ],
+            "offsetX": 39,
+            "offsetY": 2
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"footer-settings-section  brand-text-mute\"]:nth-child(3)"
+                ],
+                [
+                    ".footer-settings-section:nth-child(3)"
+                ],
+                [
+                    "Settings"
+                ]
+            ],
+            "offsetX": 36,
+            "offsetY": 24
+        },
+        {
+            "type": "customStep",
+            "name": "syft",
+            "parameters": {
+                "name": "NavButtonClicked",
+                "props": {
+                    "name": "Settings"
+                }
+            }
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"footer-support-section brand-text-mute mx-1\"]"
+                ],
+                [
+                    ".footer-support-section"
+                ],
+                [
+                    "Support"
+                ]
+            ],
+            "offsetX": 32,
+            "offsetY": 28
+        },
+        {
+            "type": "customStep",
+            "name": "syft",
+            "parameters": {
+                "name": "NavButtonClicked",
+                "props": {
+                    "name": "Support"
+                }
+            }
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    ".footer-app-section"
+                ],
+                [
+                    "[class=\"footer-app-section brand-text-mute text-center \"]"
+                ],
+                [
+                    "App"
+                ]
+            ],
+            "offsetX": 28,
+            "offsetY": 35
+        },
+        {
+            "type": "customStep",
+            "name": "syft",
+            "parameters": {
+                "name": "NavButtonClicked",
+                "props": {
+                    "name": "App"
+                }
+            }
+        }
+    ]
+}
