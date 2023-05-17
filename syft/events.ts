@@ -44,3 +44,14 @@ class NavButtonClicked {
   name: string;
 
 }
+
+/**
+ * event gets fired when a weather report is reviewed
+ * @type {SyftEventType.TRACK}
+ */
+class WeatherReportViewed {
+  location: string;
+
+  unit: string;
+
+}
