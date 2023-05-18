@@ -9,3 +9,14 @@ class UserCreated {
   userid: string;
 
 }
+
+/**
+ * When a user sets location city for weather
+ * @type {SyftEventType.TRACK}
+ */
+class LocationAdded {
+  location_city: string;
+
+  location_country: string;
+
+}
