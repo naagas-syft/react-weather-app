@@ -9,3 +9,12 @@ class UserCreated {
   userid: string;
 
 }
+
+/**
+ * 
+ * @type {SyftEventType.TRACK}
+ */
+class LocationAdded {
+  location_city: string;
+
+}
