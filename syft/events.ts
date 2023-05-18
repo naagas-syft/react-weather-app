@@ -17,4 +17,6 @@ class UserCreated {
 class LocationAdded {
   location_city: string;
 
+  location_country: string;
+
 }
