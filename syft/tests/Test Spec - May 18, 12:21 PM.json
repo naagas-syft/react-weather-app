@@ -1,0 +1,106 @@
+{
+    "title": "Test Spec - May 18, 12:21 PM",
+    "steps": [
+        {
+            "type": "navigate",
+            "url": "http://localhost:3001/weather",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "http://localhost:3001/weather"
+                }
+            ]
+        },
+        {
+            "type": "setViewport",
+            "width": 994,
+            "height": 865,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"footer-app-section brand-text-mute text-center \"]"
+                ],
+                [
+                    ".footer-app-section"
+                ],
+                [
+                    "App"
+                ]
+            ],
+            "offsetX": 21,
+            "offsetY": 41
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"footer-settings-section  brand-text-mute\"]:nth-child(2)"
+                ],
+                [
+                    ".footer-settings-section:nth-child(2)"
+                ],
+                [
+                    "Search"
+                ]
+            ],
+            "offsetX": 26,
+            "offsetY": 41
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"utility-notch my-2\"]"
+                ],
+                [
+                    ".utility-notch"
+                ]
+            ],
+            "offsetX": 59,
+            "offsetY": 4
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"footer-settings-section  brand-text-mute\"]:nth-child(3)"
+                ],
+                [
+                    ".footer-settings-section:nth-child(3)"
+                ],
+                [
+                    "Settings"
+                ]
+            ],
+            "offsetX": 22,
+            "offsetY": 35
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    ".footer-support-section"
+                ],
+                [
+                    "[class=\"footer-support-section brand-text-mute mx-1\"]"
+                ],
+                [
+                    "Support"
+                ]
+            ],
+            "offsetX": 25,
+            "offsetY": 45
+        }
+    ]
+}
