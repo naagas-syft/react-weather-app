@@ -1,0 +1,59 @@
+name: Syft Auto Instrumentation
+run-name: Auto Instrumentation Action ran by ${{ github.actor }}
+on:
+  - workflow_dispatch
+
+jobs:
+  Syft-Auto-Instrument:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ github.repository }}
+          ref: ${{ github.ref }}
+
+      # https://github.com/actions/setup-node/issues/49#issuecomment-1293249466
+      - name: Setup Node.js and npm
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+
+      # Skip post-install scripts here, as a malicious script could steal NODE_AUTH_TOKEN.
+      - name: Install npm dependencies
+        working-directory: .
+        run: "npm ci --ignore-scripts"
+        shell: bash
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # `npm rebuild` will run all those post-install scripts for us.
+      - name: Run post-install scripts
+        working-directory: .
+        run: "npm rebuild && npm run prepare --if-present"
+        shell: bash
+
+      - name: Generate Syft client and launch app
+        working-directory: .
+        run: |
+          npx syft generate
+          BROWSER=none npm start &
+
+      - name: Auto Instrument
+        id: syft_ai
+        uses: syftdata/syft-cloud-action@v0.0.2
+        with:
+          working_directory: .
+          instrumentation_token: ${{ secrets.OPENAI_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create commit with Auto-Instrument code
+        # only run if auto-instrument step was run successfully
+        if: ${{ steps.syft_ai.outcome == 'success' }}
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Syft Auto-Instrumentation Bot
+          author_email: syft-aibot@syftdata.com
+          message: "Auto-instrument events with Syft"
+          add: "-u"
