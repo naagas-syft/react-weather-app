@@ -13,3 +13,12 @@ class LocationSearched {
   location_country: string;
 
 }
+
+/**
+ * Gets logged when a page is viewed
+ * @type {SyftEventType.TRACK}
+ */
+class PageViewed {
+  name: string;
+
+}
