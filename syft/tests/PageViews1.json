@@ -1,0 +1,146 @@
+{
+    "title": "PageViews1",
+    "steps": [
+        {
+            "type": "navigate",
+            "url": "http://localhost:3001/",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "http://localhost:3001/"
+                }
+            ]
+        },
+        {
+            "type": "setViewport",
+            "width": 994,
+            "height": 865,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"footer-app-section brand-text-mute text-center \"]"
+                ],
+                [
+                    ".footer-app-section"
+                ],
+                [
+                    "App"
+                ]
+            ],
+            "offsetX": 43,
+            "offsetY": 34
+        },
+        {
+            "type": "customStep",
+            "name": "syft",
+            "parameters": {
+                "name": "PageViewed",
+                "props": {
+                    "name": "app"
+                }
+            }
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"footer-settings-section  brand-text-mute\"]:nth-child(2)"
+                ],
+                [
+                    ".footer-settings-section:nth-child(2)"
+                ],
+                [
+                    "Search"
+                ]
+            ],
+            "offsetX": 44,
+            "offsetY": 31
+        },
+        {
+            "type": "customStep",
+            "name": "syft",
+            "parameters": {
+                "name": "PageViewed",
+                "props": {
+                    "name": "search"
+                }
+            }
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"utility-notch my-2\"]"
+                ],
+                [
+                    ".utility-notch"
+                ]
+            ],
+            "offsetX": 35,
+            "offsetY": 6
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"footer-settings-section  brand-text-mute\"]:nth-child(3)"
+                ],
+                [
+                    ".footer-settings-section:nth-child(3)"
+                ],
+                [
+                    "Settings"
+                ]
+            ],
+            "offsetX": 36,
+            "offsetY": 39
+        },
+        {
+            "type": "customStep",
+            "name": "syft",
+            "parameters": {
+                "name": "PageViewed",
+                "props": {
+                    "name": "settings"
+                }
+            }
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "[class=\"footer-support-section brand-text-mute mx-1\"]"
+                ],
+                [
+                    ".footer-support-section"
+                ],
+                [
+                    "Support"
+                ]
+            ],
+            "offsetX": 23,
+            "offsetY": 40
+        },
+        {
+            "type": "customStep",
+            "name": "syft",
+            "parameters": {
+                "name": "PageViewed",
+                "props": {
+                    "name": "support"
+                }
+            }
+        }
+    ]
+}
