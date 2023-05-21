@@ -2,6 +2,8 @@ name: Syft Auto Instrumentation
 run-name: Auto Instrumentation Action ran by ${{ github.actor }}
 on:
   - workflow_dispatch
+  - push
+    - featuref
 
 jobs:
   Syft-Auto-Instrument:
@@ -38,7 +40,7 @@ jobs:
         working-directory: .
         run: |
           npx syft generate
-          BROWSER=none npm start &
+          BROWSER=none PORT=3001 npm start &
 
       - name: Auto Instrument
         id: syft_ai
