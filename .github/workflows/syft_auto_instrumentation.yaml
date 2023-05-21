@@ -1,9 +1,11 @@
 name: Syft Auto Instrumentation
 run-name: Auto Instrumentation Action ran by ${{ github.actor }}
 on:
-  - workflow_dispatch
-  - push
-    - featuref
+  push:
+    branches:
+      - featuref
+  workflow_dispatch:
+
 
 jobs:
   Syft-Auto-Instrument:
