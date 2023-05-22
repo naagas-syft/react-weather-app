@@ -9,3 +9,12 @@ class PageViewed {
   name: string;
 
 }
+
+/**
+ * location searched
+ * @type {SyftEventType.TRACK}
+ */
+class Location Searched {
+  loc_city: string;
+
+}
