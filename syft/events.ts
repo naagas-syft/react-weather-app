@@ -14,7 +14,7 @@ class PageViewed {
  * location searched
  * @type {SyftEventType.TRACK}
  */
-class Location Searched {
+class LocationSearched {
   loc_city: string;
 
 }
