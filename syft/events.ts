@@ -6,6 +6,9 @@ import type { type, SyftEventType } from '@syftdata/client';
  * @type {SyftEventType.TRACK}
  */
 class UserCreated {
+  /**
+   * this is the user id
+   */
   userid: string;
 
 }
